@@ -1,0 +1,27 @@
+h1 Listing drugs
+
+table
+  thead
+    tr
+      th Name
+      th Qty
+      th Unit
+      th Price per unit
+      th
+      th
+      th
+
+  tbody
+    - @drugs.each do |drug|
+      tr
+        td = drug.name
+        td = drug.qty
+        td = drug.unit
+        td = drug.price_per_unit
+        td = link_to 'Show', drug
+        td = link_to 'Edit', edit_drug_path(drug)
+        td = link_to 'Destroy', drug, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Drug', new_drug_path
