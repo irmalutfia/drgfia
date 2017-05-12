@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Remain:
+  = @payment.remain
+p
+  strong Date:
+  = @payment.date
+p
+  strong Total:
+  = @payment.total
+p
+  strong Invoice:
+  = @payment.invoice
+
+= link_to 'Edit', edit_payment_path(@payment)
+'  |
+= link_to 'Back', payments_path

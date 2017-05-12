@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  remain: 
+  date: 2017-05-10
+  total: 
+  invoice: MyString
+
+two:
+  remain: 
+  date: 2017-05-10
+  total: 
+  invoice: MyString
